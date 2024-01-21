@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+}
+
+#user-info {
+    margin-top: 20px;
+}
+
+.user-card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-info-details {
+    flex: 1;
+}
+
+.repositories-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repository-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.repository-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.repository-card:hover {
+    background-color: #f5f5f5;
+}
+
+.languages-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language-box {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.pagination-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination-button:hover {
+    background-color: #45a049;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

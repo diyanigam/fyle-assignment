@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GitHub Repositories Viewer</title>
+</head>
+<body>
+    <header>
+        <h1>GitHub Repositories Viewer</h1>
+    </header>
+    <main>
+        <section id="home">
+            <p>Enter a GitHub username to view their public repositories:</p>
+            <input type="text" id="usernameInput" placeholder="Enter GitHub username">
+            <button onclick="searchRepositories()">Search</button>
+        </section>
+        <section id="user-info" style="display: none;"></section>
+        <section id="repositories" style="display: none;"></section>
+        <section id="pagination" style="display: none;"></section>
+        <div id="loader" class="loader" style="display: none;"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
